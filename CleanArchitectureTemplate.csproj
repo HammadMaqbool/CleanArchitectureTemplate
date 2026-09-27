@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <PackageId>HammadMaqbool.CleanArchitecture.Template</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+
+    <Title>Clean Architecture Web API Template</Title>
+    <Authors>Hammad Maqbool</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/HammadMaqbool/CleanArchitectureTemplate</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/HammadMaqbool/CleanArchitectureTemplate</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Description>
+      A simple Clean Architecture Web API template for .NET,
+      using Minimal APIs, BLL/DAL separation, centralized endpoint
+      registration, Swagger, and AI development instructions.
+    </Description>
+
+    <PackageReleaseNotes>
+  Initial release of the Clean Architecture Web API template for .NET 10.
+  Includes Minimal APIs, BLL/DAL separation, centralized endpoint registration,
+  Swagger, a Product reference implementation, and AGENTS.md guidance.
+</PackageReleaseNotes>
+
+    <PackageTags>
+      dotnet-new;template;clean-architecture;webapi;minimal-api
+    </PackageTags>
+
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageType>Template</PackageType>
+
+    <!-- This project packages template files only. -->
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+
+    <!-- Do not compile source files from the template projects. -->
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    <!-- Include files such as .template.config. -->
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="**\*"
+             Exclude="
+               bin\**;
+               obj\**;
+               .vs\**;
+               **\bin\**;
+               **\obj\**;
+               CleanArchitectureTemplate.csproj" />
+    <Content Include="README.md"
+         Pack="true"
+         PackagePath="\" />
+  </ItemGroup>
+
+</Project>
