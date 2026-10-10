@@ -1,3 +1,4 @@
+
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Hammad Maqbool",
@@ -14,5 +15,28 @@
   "tags": {
     "language": "C#",
     "type": "solution"
+  },
+  "symbols": {
+    "framework": {
+      "type": "parameter",
+      "datatype": "choice",
+      "defaultValue": "net10.0",
+      "description": "Select the target .NET framework.",
+      "replaces": "net10.0",
+      "choices": [
+        {
+          "choice": "net8.0",
+          "description": ".NET 8"
+        },
+        {
+          "choice": "net9.0",
+          "description": ".NET 9"
+        },
+        {
+          "choice": "net10.0",
+          "description": ".NET 10"
+        }
+      ]
+    }
   }
 }

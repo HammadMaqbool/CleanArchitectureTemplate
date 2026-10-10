@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <PackageId>HammadMaqbool.CleanArchitecture.Template</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.1.0</PackageVersion>
 
     <Title>Clean Architecture Web API Template</Title>
     <Authors>Hammad Maqbool</Authors>
